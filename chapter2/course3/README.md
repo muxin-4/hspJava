@@ -148,6 +148,26 @@ double result = c + i + d; // ok
 short s = 14; // ok
 short t = s + b; // 错误 自动提升成int，int -> short
 
+基本数据类型和String类型的转换
+
+介绍
+在程序开发中，我们经常需要将基本数据类型转成String类型。或者将String类型转成基本数据类型。
+
+基本数据类型转String类型
+语法：将基本类型的值+""即可
+案例演示：StringToBasic.java
+
+String类型转基本数据类型
+语法：通过基本类型的包装类调用parseXX方法即可
+案例演示：StringToBasic.java
+
+
+
+
+
+
+
+
 
 
 
