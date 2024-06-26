@@ -129,7 +129,7 @@ System.out.println(c3);
 ```
 4.byte、short、char类型在进行运算时，当做int类型处理
 
-
+0056
 基本数据类型转换练习题
 判断能否通过编译
 1.short s = 12; // ok
@@ -148,6 +148,7 @@ double result = c + i + d; // ok
 short s = 14; // ok
 short t = s + b; // 错误 自动提升成int，int -> short
 
+0057 String和基本类型转换
 基本数据类型和String类型的转换
 
 介绍
@@ -160,6 +161,12 @@ short t = s + b; // 错误 自动提升成int，int -> short
 String类型转基本数据类型
 语法：通过基本类型的包装类调用parseXX方法即可
 案例演示：StringToBasic.java
+
+0058 String转基本类型细节
+注意事项
+案例演示：StringToBasicDetail.java
+1.在将String类型转成基本数据类型时，要确保String类型能够转换成有效的数据，比如我们可以把"123"，转成一个整数，但是不能把"hello"转成一个整数
+2.如果格式不正确，就会抛出异常，程序就会终止，这个问题在异常处理章节中，会处理
 
 
 
