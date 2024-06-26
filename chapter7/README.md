@@ -44,4 +44,16 @@ run,cry,eat
 2.属性是类的一个组成部分，一般是基本数据类型，也可是引用类型（对象，数组）。比如我们前面定义猫类的int age就是属性
 
 
+0196 属性注意细节
+注意事项和细节说明
+PropertiesDetail.java
+1.属性的定义语法同变量，示例：访问修饰符 属性类型 属性名
+  这里老师简单的介绍访问修饰符：控制属性的访问范围
+  有四种访问修饰符 public，proctected，默认，private，后面详细介绍
+2.属性的定义类型可以为任意类型，包含基本类型和引用类型
+3.属性如果不赋值，有默认值，规则和数组一致。具体说：int 0, short 0, byte 0, long 0, float 0, double 0.0, char \u0000, boolean false, String null
+案例演示：[Person类]
+
+![img_1.png](img_1.png)
+
 
