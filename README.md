@@ -1,3 +1,6 @@
+【零基础 快速学Java】韩顺平 零基础30天学会Java 
+https://www.bilibili.com/video/BV1fh411y7R8/?p=1&vd_source=e71369aa98c772eeec7ab298bd57af04
+
 .
 ├── README.md
 ├── chapter1
