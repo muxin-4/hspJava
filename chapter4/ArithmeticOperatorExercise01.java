@@ -24,9 +24,9 @@ public class ArithmeticOperatorExercise01 {
          * 所以，最终 System.out.println(i); 输出的是1，而不是2。
          */
 
-        int i = 1;
-        i = ++i;
-        System.out.println(i); // 2
+//        int i = 1;
+//        i = ++i;
+//        System.out.println(i); // 2
 
         /**
          * 结果是2是因为前置递增运算符（++i）的行为。让我们逐步分析这行代码 i = ++i; 来理解为什么会得到这个结果。
@@ -47,5 +47,13 @@ public class ArithmeticOperatorExercise01 {
          * 因此，最终输出结果是2。
          */
 
+        int i1 = 10;
+        int i2 = 20;
+        int i = i1++; // i1此时为10，所以i=10
+        System.out.print("i=" + i); // 10
+        System.out.println("i2=" + i2); // 20
+        i = --i2;
+        System.out.print("i=" + i); // 19
+        System.out.println("i2=" + i2); // 19
     }
 }
