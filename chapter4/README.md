@@ -278,7 +278,23 @@ int b = 99;
 int result = a > b ? a++ : b--;
 ```
 
+0078 三元运算符细节
 
+- 使用细节 TernaryOperatorDetail.java
+1. 表达式1和表达式2要为可以赋给接收变量的类型（或可以自动转换）
+2. 三元运算符可以转换成if-else语句
+```java
+int res = a > b ? a++ : --b; 
+if(a > b) {
+    res = a ++;
+}else {
+    res = --b;
+}
+```
+
+
+课堂练习
+案例：实现三个数的最大值
 
 
 
