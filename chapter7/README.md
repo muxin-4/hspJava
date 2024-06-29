@@ -75,6 +75,20 @@ cat.name;
 cat.age;
 cat.color;
 
+0198 对象分配机制
+类和对象的内存分配机制(重要)
+
+看一个思考题
+我们定义一个人类(Person)(包括名字，年龄)。(Object03.java)
+我们看看下面一段代码：
+Person p1 = new Person();
+p1.age = 10;
+p1.name = "小明";
+Person p2 = p1; // 把p1赋给了p2,让p2指向p1
+System.out.pringln(p2.age);
+
+请问：p2.age究竟是多少？并画出内存图
+
 
 
 
