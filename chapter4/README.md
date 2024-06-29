@@ -107,6 +107,141 @@ boolean flag = a > b;
 3.比较运算符"=="不能误写成"="
 
 
+0070 逻辑运算符介绍
+介绍
+用于连接多个条件（多个关系表达式），最终的结果也是一个boolean值。
+1. a & b - 按位与运算符
+   用途：对两个操作数的每一位执行按位与操作。
+   逻辑行为：
+   当 a 和 b 都为真（true）时，结果为真（true）。
+   当 a 或 b 有一个为假（false）时，结果为假（false）。
+   示例：
+```java
+   boolean a = true;
+   boolean b = false;
+   boolean result = a & b; // result 为 false
+```
+2. a && b - 逻辑与运算符（短路与）
+   用途：对两个布尔操作数进行逻辑与运算。
+   逻辑行为：
+   当 a 和 b 都为真（true）时，结果为真（true）。
+   如果 a 为假（false），则不会计算 b，结果直接为假（false）。这是短路特性。
+```java 
+   boolean a = true;
+   boolean b = false;
+   boolean result = a && b; // result 为 false
+```
+3. a | b - 按位或运算符
+   用途：对两个操作数的每一位执行按位或操作。
+   逻辑行为：
+   当 a 和 b 中至少有一个为真（true）时，结果为真（true）。
+   当 a 和 b 都为假（false）时，结果为假（false）。
+```java
+   boolean a = true;
+   boolean b = false;
+   boolean result = a | b; // result 为 true
+```
+4. a || b - 逻辑或运算符（短路或）
+   用途：对两个布尔操作数进行逻辑或运算。
+   逻辑行为：
+   当 a 和 b 中至少有一个为真（true）时，结果为真（true）。
+   如果 a 为真（true），则不会计算 b，结果直接为真（true）。这是短路特性。
+```java
+   boolean a = true;
+   boolean b = false;
+   boolean result = a || b; // result 为 true
+```
+5. !a - 逻辑非运算符
+   用途：对一个布尔操作数进行逻辑非（取反）操作。
+   逻辑行为：
+   如果 a 为真（true），结果为假（false）。
+   如果 a 为假（false），结果为真（true）。
+```java
+   boolean a = true;
+   boolean result = !a; // result 为 false
+```
+6. a ^ b - 按位异或运算符
+   用途：对两个操作数的每一位执行按位异或操作。
+   逻辑行为：
+   当 a 和 b 不同（一个为真，一个为假）时，结果为真（true）。
+   当 a 和 b 相同（都为真或都为假）时，结果为假（false）。
+   示例：
+```
+   java
+   复制代码
+   boolean a = true;
+   boolean b = false;
+   boolean result = a ^ b; // result 为 true
+```
+#### 总结
+* 按位与 (a & b)：都为真时为真。
+* 逻辑与 (a && b)：都为真时为真，有短路特性。
+* 按位或 (a | b)：有一个为真时为真。
+* 逻辑或 (a || b)：有一个为真时为真，有短路特性。
+* 逻辑非 (!a)：取反操作。
+* 按位异或 (a ^ b)：两个操作数不同时为真。
+
+按位与运算符和逻辑与运算符，我看都一样啊?
+在Java中，按位与运算符 & 和逻辑与运算符 && 的确在某些情况下可能会产生相似的结果，但它们有着根本不同的行为和使用场景：
+
+按位与运算符 &
+用途：按位与运算符 & 用于对两个整数的每一位执行位运算，并将结果应用于整数的每一位。
+行为：它将两个操作数的对应位进行比较，只有当两个操作数的对应位都为1时，结果的对应位才为1；否则为0。
+示例：
+```java
+复制代码
+int a = 5;    // 二进制：0101
+int b = 3;    // 二进制：0011
+int result = a & b;  // 结果为 1，二进制：0001
+```
+逻辑与运算符 &&
+用途：逻辑与运算符 && 用于对两个布尔操作数执行逻辑与操作。
+行为：它具有短路特性，即如果第一个操作数为假（false），则不会对第二个操作数进行求值。
+示例：
+```java
+复制代码
+boolean a = true;
+boolean b = false;
+boolean result = a && b;  // 结果为 false
+```
+区别总结
+操作数类型：
+
+& 按位与运算符可以用于整数类型（如 int、long等）和布尔类型（boolean）。
+&& 逻辑与运算符只能用于布尔类型（boolean）。
+行为：
+
+& 按位与运算符对每一位进行位运算。
+&& 逻辑与运算符对两个布尔操作数进行逻辑运算，并具有短路特性。
+使用场景：
+
+& 用于对整数进行位操作，或者对多个布尔表达式进行按位与操作。
+&& 用于对布尔表达式进行短路逻辑与操作，当第一个操作数为假时，可以避免计算第二个操作数。
+虽然在某些情况下它们可能会产生相似的结果，但它们的行为和使用场景决定了它们在编程中的不同作用。
+
+
+
+
+
+
+
+
+
+
+
+| a     | b     | a & b <br/>按位与运算符 | a && b<br/>逻辑与运算符（短路与） | a\|b<br/>按位或运算符 | a\|\|b<br/>逻辑或运算符 | !a <br/>逻辑非运算符  | a^b <br/>按位异或运算符  | 
+|-------|-------|--------------|--------|------|--------|-------|-------|
+| true  | true  | true         | true   | true | true   | false | false |
+| true  | false | false        | false   | true | true   | false | true |
+| false | true  | false        | false   | true | true   | true | true |
+| false | false | false        | false   | false | false   | true | false |
+
+
+
+
+
+
+
 
 
 

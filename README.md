@@ -12,4 +12,7 @@ https://www.bilibili.com/video/BV1fh411y7R8/?p=1&vd_source=e71369aa98c772eeec7ab
     ├── course1 变量
     └── course2 加号
     └── course3 数据类型
+
+
+韩老师讲的逻辑与我没听懂，后面再找资料学习
     
