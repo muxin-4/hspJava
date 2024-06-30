@@ -110,4 +110,18 @@ p.age = 10;
 4.进行指定初始化，比如p.name = "jack"; p.age = 10;
 
 
-
+0200 对象机制练习
+看一个练习题，并分析画出内存布局图，进行分析
+```java
+// 我们看看下面一段代码，会输出什么信息：
+Person a = new Person();
+a.age = 10;
+a.name = "小明";
+Person b;
+b = a;
+System.out.println(b.name);
+b.age = 200;
+b = null;
+System.out.println(a.age);
+System.out.println(b.age);
+```
