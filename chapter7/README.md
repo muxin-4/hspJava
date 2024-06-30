@@ -85,7 +85,7 @@ Person p1 = new Person();
 p1.age = 10;
 p1.name = "小明";
 Person p2 = p1; // 把p1赋给了p2,让p2指向p1
-System.out.pringln(p2.age);
+System.out.println(p2.age);
 
 请问：p2.age究竟是多少？并画出内存图
 
