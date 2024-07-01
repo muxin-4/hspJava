@@ -340,7 +340,22 @@ if(a > b) {
 4.Java中严格区分大小写，长度无限制。int totalNum = 10;int n = 90;
 5.标识符不能包含空格。int a b = 90;
 
+0082 标识符练习
 
+判断下面变量名是否正确
+hsp ✔️
+hsp12 ✔️
+1hsp ❌ 不能数字开头
+h-s ❌ 不能有-
+x h ❌ 不能有空格
+h$4 ✔️
+class ❌ 关键字
+int ❌ 关键字
+double ❌ 关键字
+public ❌ 关键字
+static ❌ 关键字
+goto ❌ 保留字
+stu_name ✔️
 
 
 
