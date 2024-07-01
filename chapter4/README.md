@@ -368,6 +368,22 @@ stu_name ✔️
 5.后面我们学习到类，包，接口，等时，我们的命名规范要这样遵守，更加详细的看文档
 
 
+0084 关键字保留字
+关键字定义：被Java语言赋予了特殊含义，用做专门用途的字符串（单词）
+关键字特点：关键字中所有字母都为小写
+
+
+|               | 关键字                                                                     |
+|---------------|-------------------------------------------------------------------------|
+| 用于定义数据类型的关键字  | class、interface、enum、byte、short、int、long、float、double、char、boolean、void |
+| 用于定义数据类型值的关键字 | true、false、null                                                         | 
+| 用于定义流程控制的关键字  | if、else、switch、case、default、while、do、for、break、continue、return          |
+
+Java保留字：现有Java版本尚未使用，但以后版本可能会作为关键字使用。自己命名标识符时要避免使用这些保留字。
+byValue、cast、future、generic、inner、operator、outer、rest、var、goto、const
+
+
+      
 
 
 
