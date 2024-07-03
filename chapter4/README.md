@@ -383,7 +383,33 @@ Java保留字：现有Java版本尚未使用，但以后版本可能会作为关
 byValue、cast、future、generic、inner、operator、outer、rest、var、goto、const
 
 
-      
+0085 键盘输入
+键盘输入语句
+- 介绍
+
+在编程中，需要接收用户输入的数据，就可以使用键盘输入语句来获取。
+input.java，需要一个扫描器（对象），就是Scanner
+
+  - 步骤：
+  1.导入该类的所在包，java.util.*
+  2.创建该类的对象（声明变量）
+  3.调用里面的功能
+
+案例演示：
+要求：可以从控制台接收用户信息，【姓名，年龄，薪水】
+```java
+// 步骤2：创建Scanner类的对象
+Scanner input = new Scanner(System.in);
+// 步骤3：调用里面的功能
+System.out.println("请输入姓名：");
+String name = input.next();
+System.out.println("请输入年龄：");
+int age = input.nextInt();
+System.out.println("请输入成绩：");
+double score = input.nextDouble();
+System.out.println("name:" + name);
+```
+
 
 
 
