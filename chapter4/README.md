@@ -407,7 +407,7 @@ System.out.println("请输入年龄：");
 int age = input.nextInt();
 System.out.println("请输入成绩：");
 double score = input.nextDouble();
-System.out.println("name:" + name);
+System.out.println("name:" + name + " 年龄=" + age + " 成绩=" + score);
 ```
 
 
