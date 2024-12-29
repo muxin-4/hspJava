@@ -192,9 +192,22 @@ if() {
 并且根据性别提示进入男子组或女子组。
 输入成绩和性别，进行判断和输出信息。[NestedIf.java]
 
-提示：double score; char gender;
-接收字符：char gender = scanner.next().charAt(0);
+提示：
+- double score; char gender; 
+- 接收字符：char gender = scanner.next().charAt(0);
 
+### 0113 嵌套分支课后练习
+应用案例
+出票系统：根据淡旺季的月份和年龄，打印票价
+
+4月-10月 旺季：
+- 成人(18-60)：60
+- 儿童(<18)：半价
+- 老人(>60)：1/3
+
+淡季
+- 成人：40
+- 其他：20
 
 
 
