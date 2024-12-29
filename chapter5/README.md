@@ -155,7 +155,21 @@ graph TD;
 4.其它情况，输出信用不及格
 5.请从键盘输入保国的芝麻信用分，并加以判断
 
+### 0111 多分支练习2
+案例演示2
 
+// 下面代码，看看输出什么
+```java
+boolean b = true;
+if(b == false) 
+    System.out.println("a");
+else if(b)
+    System.out.println("b");
+else if(!b)
+    System.out.println("c");
+else
+    System.out.println("d");
+```
 
 
 
