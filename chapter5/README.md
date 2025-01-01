@@ -236,6 +236,34 @@ public class MyProgram {
 3. break 语句用于跳出 switch 语句。如果没有 break，会继续执行后续的 case 或者 default 代码块，直到遇到 break 或者 switch 结束。
 4. default 是可选的，它是当所有 case 都不匹配时执行的代码块
 
-
+### 0115 switch流程图
 ![img.png](img/img.png)
+
+
+### 0116 switch快速入门
+案例：Switch01.java
+1.请编写一个程序，该程序可以接收一个字符，比如：a,b,c,d,e,f,g
+2.a表示星期一，b表示星期二
+3.根据用户的输入显示的信息，要求使用switch语句完成
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
