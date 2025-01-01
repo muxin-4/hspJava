@@ -209,6 +209,32 @@ if() {
 - 成人：40
 - 其他：20
 
+### 0114 switch基本语法
+基本语法
+```java
+public class MyProgram {
+    public static void main(String[] args) {
+        switch (expression) {
+            case value1:
+                // 如果 expression 的值等于 value1，执行此代码块
+                break;
+            case value2:
+                // 如果 expression 的值等于 value2，执行此代码块
+                break;
+            case value3:
+                // 如果 expression 的值等于 value3，执行此代码块
+                break;
+            default:
+                // 如果 expression 的值不匹配任何 case，执行此代码块
+        }
+    }
+}
+```
+关键点：
+1. expression 必须是 byte、short、char、int、String（Java 7 及以后版本支持）、枚举类型或者某些特定的类类型。
+2. case 后跟常量值，用于与 expression 的值进行匹配。
+3. break 语句用于跳出 switch 语句。如果没有 break，会继续执行后续的 case 或者 default 代码块，直到遇到 break 或者 switch 结束。
+4. default 是可选的，它是当所有 case 都不匹配时执行的代码块
 
 
 
