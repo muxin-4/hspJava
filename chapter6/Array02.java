@@ -15,8 +15,11 @@ public class Array02 {
         // double[] scores = new double[5];
 
         // 使用方式2-动态初始化,先声明数组，再new分配空间
-        double[] scores; // 声明数组，这时 scores 是 null
-        scores = new double[5]; // 分配内存空间，可以存放数据
+        // double[] scores; // 声明数组，这时 scores 是 null
+        // scores = new double[5]; // 分配内存空间，可以存放数据
+
+        // 使用方式3-静态初始化
+        double[] scores = {2,5,67,8,9};
 
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < scores.length; i++) {
