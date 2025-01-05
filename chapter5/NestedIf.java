@@ -11,13 +11,6 @@ public class NestedIf {
          * 接收字符：char gender = scanner.next().charAt(0);
          *
          * 技术设计：
-         * 1.接收输入的成绩，应该定义一个Scanner对象
-         * 2.把年龄保存到一个变量 double score
-         * 3.接收输入的性别，应该定义一个Scanner对象
-         * 4.把年龄保存到一个变量 char gender
-         * 5.使用if判断，输出对应信息
-         *
-         *
          * 1.创建scanner对象，接收用户输入
          * 2.接收成绩保存到double score
          * 3.使用if-else判断如果初赛成绩大于0.8进入决赛，否则提示淘汰

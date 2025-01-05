@@ -192,8 +192,75 @@ if() {
 并且根据性别提示进入男子组或女子组。
 输入成绩和性别，进行判断和输出信息。[NestedIf.java]
 
-提示：double score; char gender;
-接收字符：char gender = scanner.next().charAt(0);
+提示：
+- double score; char gender; 
+- 接收字符：char gender = scanner.next().charAt(0);
+
+### 0113 嵌套分支课后练习
+应用案例
+出票系统：根据淡旺季的月份和年龄，打印票价
+
+4月-10月 旺季：
+- 成人(18-60)：60
+- 儿童(<18)：半价
+- 老人(>60)：1/3
+
+淡季
+- 成人：40
+- 其他：20
+
+### 0114 switch基本语法
+基本语法
+```java
+public class MyProgram {
+    public static void main(String[] args) {
+        switch (expression) {
+            case value1:
+                // 如果 expression 的值等于 value1，执行此代码块
+                break;
+            case value2:
+                // 如果 expression 的值等于 value2，执行此代码块
+                break;
+            case value3:
+                // 如果 expression 的值等于 value3，执行此代码块
+                break;
+            default:
+                // 如果 expression 的值不匹配任何 case，执行此代码块
+        }
+    }
+}
+```
+关键点：
+1. expression 必须是 byte、short、char、int、String（Java 7 及以后版本支持）、枚举类型或者某些特定的类类型。
+2. case 后跟常量值，用于与 expression 的值进行匹配。
+3. break 语句用于跳出 switch 语句。如果没有 break，会继续执行后续的 case 或者 default 代码块，直到遇到 break 或者 switch 结束。
+4. default 是可选的，它是当所有 case 都不匹配时执行的代码块
+
+### 0115 switch流程图
+![img.png](img/img.png)
+
+
+### 0116 switch快速入门
+案例：Switch01.java
+1.请编写一个程序，该程序可以接收一个字符，比如：a,b,c,d,e,f,g
+2.a表示星期一，b表示星期二
+3.根据用户的输入显示的信息，要求使用switch语句完成
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
