@@ -417,13 +417,19 @@ public class SwitchDetail {
 5.break语句用来在执行完一个case分支后使程序跳出switch语句块；如果没有写break，不再匹配后面的case，直接执行后面case中的代码块，直到遇见了break
 
 
-# 0118 switch课堂练习1
+### 0118 switch课堂练习1 
 SwitchExercise.java
 1.使用switch把小写类型的char型转为大写（键盘输入）。只转换a,b,c,d,e。其它的输出"other"
 2.对学生成绩大于60分的，输出“合格”。低于60分的，输出“不合格”（注：输入的成绩不能大于100），提示成绩/60
+
+### 0119 switch课堂练习2
 3.根据用于指定月份，打印该月份所属的季节。3，4，5春季 6，7，8夏季 9，10，11 秋季  12 1 2 冬季[课堂练习，提示使用穿透]
 
 
+### 0120 switch和if选择
+switch和if的比较
+1.如果判断你的具体数值不多，而且符合byte、short、int、char、enum、string这6种类型。虽然两个语句都可以使用，建议使用switch语句。
+2.其它情况：对区间判断，对结果为boolean类型判断，使用if。if的使用范围更广
 
 
 
