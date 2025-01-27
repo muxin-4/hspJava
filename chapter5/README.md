@@ -499,6 +499,12 @@ while(循环条件) {
 while循环流程分析
 ![img.png](img/img.png)
 
+### 0128 while课堂练习
+课堂练习题
+WhileExercise.java
+1.打印1-100之间所有能被3整除的数[使用while，老师评讲]
+2.打印40-200之间所有的偶数[使用while了，课后练习]
+
 
 
 
