@@ -495,6 +495,9 @@ while(循环条件) {
 1.while循环也有四要素
 2.只是四要素放的位置和for循环不一样
 
+### 0127 while执行流程
+while循环流程分析
+![img.png](img/img.png)
 
 
 
