@@ -18,25 +18,18 @@ public class Switch01 {
         switch (day) {
             case 'a':
                 System.out.println("今天星期一，猴子吃饭");
-                break;
-            case 'b':
+           case 'b':
                 System.out.println("今天星期二，猴子喝水");
-                break;
             case 'c':
                 System.out.println("今天星期三，猴子睡觉");
-                break;
             case 'd':
                 System.out.println("今天星期四，猴子上厕所");
-                break;
             case 'e':
                 System.out.println("今天星期五，猴子逛街");
-                break;
             case 'f':
                 System.out.println("今天星期六，猴子打游戏");
-                break;
             case 'g':
                 System.out.println("今天星期日，猴子上班");
-                break;
             default:
                 System.out.println("输入的字符不正确，匹配不到");
         }

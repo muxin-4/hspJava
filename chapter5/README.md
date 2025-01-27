@@ -231,7 +231,7 @@ public class MyProgram {
 }
 ```
 关键点：
-1. expression 必须是 byte、short、char、int、String（Java 7 及以后版本支持）、枚举类型或者某些特定的类类型。
+1. expression 必须是 byte、short、char、int、String（Java 7 及以后版本支持）、enum枚举类型或者某些特定的类类型。
 2. case 后跟常量值，用于与 expression 的值进行匹配。
 3. break 语句用于跳出 switch 语句。如果没有 break，会继续执行后续的 case 或者 default 代码块，直到遇到 break 或者 switch 结束。
 4. default 是可选的，它是当所有 case 都不匹配时执行的代码块
@@ -247,9 +247,181 @@ public class MyProgram {
 3.根据用户的输入显示的信息，要求使用switch语句完成
 
 
+### chatgpt对于switch的解释
+
+Java 中的 switch 语句是一种控制流语句，用于基于不同的条件执行不同的代码块。它通常用来代替一系列的 if-else 语句，尤其当多个条件判断针对同一个变量时，switch 语句能提供更简洁和高效的解决方案。
+
+基本语法：
+```java
+switch (expression) {
+    case value1:
+        // 语句1
+        break;
+    case value2:
+        // 语句2
+        break;
+    case value3:
+        // 语句3
+        break;
+    default:
+        // 默认语句
+}
+```
+关键组成部分：
+1. switch 表达式： switch 后跟随的表达式是一个用于计算的值。这个表达式的结果会与 case 标签中的值进行比较。支持的类型有：
+
+- byte, short, int, char
+- String（Java 7及以后支持）
+- enum（枚举类型）
+2. case 标签： case 后面的值是具体的匹配值。switch 会将表达式的结果与这些值进行比较。如果匹配，则执行对应的代码块。
+
+3. break 语句： 每个 case 语句块后通常都会有一个 break 语句，表示结束当前 switch 的执行，跳出 switch 语句。如果没有 break，程序会继续执行下一个 case 块的代码（即“fall-through”行为）。
+
+4. default 语句： default 是可选的，它在所有 case 值都不匹配时执行。default 语句没有条件，它通常作为“捕获”任何未处理的情况。如果没有 default，并且所有 case 不匹配，switch 不会做任何事。
+
+例子：
+1. 基本使用
+```java
+int day = 3;
+switch (day) {
+    case 1:
+        System.out.println("Monday");
+        break;
+    case 2:
+        System.out.println("Tuesday");
+        break;
+    case 3:
+        System.out.println("Wednesday");
+        break;
+    case 4:
+        System.out.println("Thursday");
+        break;
+    case 5:
+        System.out.println("Friday");
+        break;
+    case 6:
+        System.out.println("Saturday");
+        break;
+    case 7:
+        System.out.println("Sunday");
+        break;
+    default:
+        System.out.println("Invalid day");
+}
+```
+   输出：
+```java
+Wednesday
+```
+
+2. 使用 String 类型（Java 7及以上）
+ ```java
+String color = "red";
+switch (color) {
+    case "red":
+        System.out.println("Color is Red");
+        break;
+    case "green":
+        System.out.println("Color is Green");
+        break;
+    case "blue":
+        System.out.println("Color is Blue");
+        break;
+    default:
+        System.out.println("Unknown color");
+}
+```
+输出：
+```java
+Color is Red
+```
+
+3. 使用 enum 类型（Java 5及以上）
+```java
+enum Day {
+    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+}
+
+Day day = Day.WEDNESDAY;
+switch (day) {
+    case MONDAY:
+        System.out.println("Start of the work week");
+        break;
+    case WEDNESDAY:
+        System.out.println("Middle of the week");
+        break;
+    case FRIDAY:
+        System.out.println("End of the work week");
+        break;
+    default:
+        System.out.println("Weekend");
+}
+```
+输出：
+```java
+Middle of the week
+```
+4. 使用“fall-through”行为（没有 break）
+```java
+int number = 2;
+switch (number) {
+    case 1:
+    case 2:
+    case 3:
+        System.out.println("Number is between 1 and 3");
+        break;
+    case 4:
+        System.out.println("Number is 4");
+        break;
+    default:
+        System.out.println("Number is out of range");
+}
+```
+输出：
+```java
+Number is between 1 and 3
+```
+这里，case 1, case 2, 和 case 3 没有 break，所以它们都会执行相同的代码块。
+
+关键注意事项：
+匹配顺序： switch 会按照 case 的顺序进行匹配。如果找到匹配的 case，会执行对应的代码，并跳出 switch 语句（如果有 break）。如果没有匹配的 case，则会执行 default 语句（如果有的话）。
+
+break 的作用： break 语句用于跳出 switch 语句，如果不加 break，程序会继续执行下一个 case，这就是所谓的“fall-through”行为。例如，如果你在多个 case 下想执行相同的代码块，可以省略 break。
+
+不能使用浮动类型： switch 语句不支持 float, double, 或 long 类型。
+
+无法使用对象（除 String 和 enum）： switch 语句不支持其他对象类型，像 Object 或 ArrayList 等类型不能直接作为 switch 的表达式。
+
+总结：
+switch 语句提供了一种根据不同条件执行不同代码的方式，特别适用于多个条件基于同一变量的情况。它比多个 if-else 语句更简洁且易读，但需要注意其适用的类型、fall-through 行为和 break 的使用。
+
+### 0117 switch细节
+- switch注意事项和细节讨论
+SwitchDetail.java
+1.表达式数据类型，应和case后的常量类型一致，或者是可以自动转成可以相互比较的类型，比如输入的是char，而常量是int
+2.switch（表达式）中表达式的返回值必须是：(byte、short、char、int、String、enum)
+```java
+public class SwitchDetail {
+    public static void main(String[] args) {
+        double c = 1.1;
+        switch (c) {
+            case 1.1: // 错误
+                System.out.println("I'm one");
+                break;
+        }
+    }
+}
+```
+3.case字句的值必须是常量或者是常量表达式，而不能是变量
+4.default字句是可选的，当没有匹配的case时，执行default
+5.break语句用来在执行完一个case分支后使程序跳出switch语句块；如果没有写break，不再匹配后面的case，直接执行后面case中的代码块，直到遇见了break
 
 
-
+# 0118 switch课堂练习1
+SwitchExercise.java
+1.使用switch把小写类型的char型转为大写（键盘输入）。只转换a,b,c,d,e。其它的输出"other"
+2.对学生成绩大于60分的，输出“合格”。低于60分的，输出“不合格”（注：输入的成绩不能大于100），提示成绩/60
+3.根据用于指定月份，打印该月份所属的季节。3，4，5春季 6，7，8夏季 9，10，11 秋季  12 1 2 冬季[课堂练习，提示使用穿透]
 
 
 
