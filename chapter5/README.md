@@ -520,5 +520,8 @@ WhileExercise.java
 4.最后有一个分号
 5.while和do while 区别。举例：要账
 
+### 0130 do while执行流程
+do while 循环执行流程分析
+![img.png](img/img1.png)
 
 
