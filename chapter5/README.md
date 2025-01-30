@@ -660,3 +660,17 @@ BreakExercise.java
 ```
 - 以while使用continue为例，画出示意图
 ![img.png](img/img6.png)
+
+### 0144 continue快速入门
+- 快速入门案例
+Continue01.java
+```java
+int i = 1;
+while (i <= 4) {
+    i++;
+    if(i == 2) {
+        continue;
+    }
+    System.out.println("i=" + i);
+}
+```
