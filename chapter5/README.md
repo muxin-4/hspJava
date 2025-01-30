@@ -641,4 +641,22 @@ public class BreakLabelExample {
 
 BreakExercise.java
 1. 1-100以内的数求和，求出当和第一次大于20的当前数 [for + break]
+2. 
+### 0142 break课堂练习2
 2. 实现登录验证，有3次机会，如果用户名为"丁真"，密码"666"提示登录成功，否则提示还有几次机会，请使用for+break完成
+
+### 0143 跳转控制语句-continue
+- 基本介绍
+1. continue语句用于结束本次循环，继续执行下一次循环
+2. continue语句出现在多层嵌套的循环语句体中时，可以通过标签指明要跳过的是哪一层循环，这个和前面标签的使用规则一样
+
+- 基本语法
+```java
+{
+    ......
+    continue;    
+    ......    
+}
+```
+- 以while使用continue为例，画出示意图
+![img.png](img/img6.png)
