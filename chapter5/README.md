@@ -636,3 +636,9 @@ public class BreakLabelExample {
 3.break后指定到哪个label就退出到哪里
 4.在实际的开发中，老韩尽量不使用标签
 5.如果没有指定break，默认退出最近的循环体
+
+### 0141 break课堂练习1
+
+BreakExercise.java
+1. 1-100以内的数求和，求出当和第一次大于20的当前数 [for + break]
+2. 实现登录验证，有3次机会，如果用户名为"丁真"，密码"666"提示登录成功，否则提示还有几次机会，请使用for+break完成
