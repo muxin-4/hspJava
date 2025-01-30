@@ -603,3 +603,5 @@ break语句用于终止某个语句块的执行，一般使用在switch或者循
 - 以while使用break为例，画出示意图
 ![img.png](img/img4.png)
 
+### 0139 break快速入门
+跳转控制语句
