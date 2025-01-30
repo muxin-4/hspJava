@@ -583,3 +583,23 @@ MulForExercise01.java
 请编写一个程序，可以接收一个整数，表示层数（totalLevel），打印出金字塔
   (Stars.java)
 ![img.png](img/img3.png)
+
+
+### 0136 空心金字塔
+Stars.java
+
+### 0137 break需求
+看下面一个需求
+随机生成1-100的一个数，直到生成了97这个数，看看你一共用了几次？
+随机使用(int)(Math.random() * 100) + 1
+
+### 0138 break执行流程
+- 基本语句介绍：
+break语句用于终止某个语句块的执行，一般使用在switch或者循环[for，while，do-while]中
+- 基本语法
+{
+    break;
+}
+- 以while使用break为例，画出示意图
+![img.png](img/img4.png)
+
