@@ -693,3 +693,19 @@ for(int j = 0; j < 4; j++) {
     }
 }
 ```
+
+### 0146 return使用说明
+- 介绍
+return使用在方法，表示跳出所在的犯法，在讲解方法的时候，会详细的介绍，
+这里我们简单的提一下。注意：如果return写在main方法，退出程序..
+Return01.java
+```java
+for(int i = 1; i <=5; i++) {
+    if(i == 3) {
+        System.out.println("韩顺平" + i);
+        return;
+    }    
+    System.out.println("Hello World!");
+}
+System.out.println("go on..");
+```
