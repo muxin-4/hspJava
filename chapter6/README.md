@@ -70,3 +70,9 @@ int 0,short 0,byte 0,long 0,float 0.0,double 0.0,char \u0000,boolean false,Strin
 5.数组的下标是从0开始的
 6.数组下标必须在指定范围内使用，否则报：下标越界异常，比如 int[] arr = new int[5]; 则有效小标为0-4
 7.数组属引用类型，数组型数据是对象(object)
+
+
+### 0161 数组练习1
+1.创建一个char类型的26个元素的数组，分别放置'A'-'Z'。使用for循环访问所有元素并打印出来。提示：char类型数据运算 'A' + 1 -> 'B' ArrayExercise01.java
+2.请求出一个数组int[]的最大值{4, -1, 9, 10, 23}，并得到对应的下标。ArrayExercise02.java
+3.请求出一个数组的和和平均值。（养鸡场）
